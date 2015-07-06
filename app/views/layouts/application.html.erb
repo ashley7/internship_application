@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>  <!-- THIS links to my js fil-->
 </head>
 <body>
+	<div class = "container well">
 <!-- what ever goes herer is seen in all the pages in the website -->
+<div class = "nav">
+	<ul class = "nav nav-tabs">
+<li class = "active"><%= link_to("About",interns_about_path)%></li>
+<li><%= link_to("Help", interns_help_path)%></li>
+<li><%= link_to("Home", root_path)%></li>
+   </ul>
+</div>
 <%= yield %>
-
+</div>
 </body>
 </html>
