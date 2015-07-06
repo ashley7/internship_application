@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>InternshipApplication</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <title>Charles Internship Application</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %> <!-- Here am colling thge style sheet file, so this file will call all my other pages of css-->
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <%= csrf_meta_tags %>  <!-- THIS links to my js fil-->
 </head>
 <body>
-
+<!-- what ever goes herer is seen in all the pages in the website -->
 <%= yield %>
 
 </body>
